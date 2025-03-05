@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Formulário</title>
 </head>
 <body>
-    <form method="post">
+    <form id="form" method="post">
         <label for="nome">Nome: </label>
         <input id="nome" type="text" name="nome" placeholder="Digite o nome..." required>
         <br>
@@ -37,8 +38,8 @@
         <input id="locomocao" type="checkbox" name="publico" value="publico"> Público
         <input id="locomocao" type="checkbox" name="privado" value="privado"> Privado
         <br>
-        <button name="cadastrar">Cadastrar</button>
-        <input type="reset" name="button" value="reset">
+        <button id="botao" name="cadastrar">Cadastrar</button>
+        <input id="reset" type="reset" name="button" value="reset">
     </form>
 </body>
 </html>
