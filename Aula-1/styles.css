@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    color: black;
+    margin: 10px;
+    padding: 10px;
+}
+
+a{
+    background-color: black;
+    color: white;
+    transition: font-size 0.3s;
+    border-radius: 15px;
+}
+
+h1{
+    font-family: "Monoton", serif;
+    font-weight: 400;
+    text-shadow: 0px 0px 10px rgb(117, 196, 0);
+}
+
+ol, ul{
+    padding-left: 20px;
+}
+
+figure{
+    width: 300px;
+    margin: 0 auto;
+}
+
+img{
+    width: 100%;
+}
+
+h3{
+    margin: 10px;
+}
+
+#container{
+    width: 800px;
+    margin: 0 auto;  
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+td, th{
+    border: 2px solid black;
+    padding: 4px;
+}
+
+
+a:hover{
+    font-size: 20px;
+    border: 2px solid rgb(214, 140, 140);
+}
+
+li::after{
+    content: ";";
+}
