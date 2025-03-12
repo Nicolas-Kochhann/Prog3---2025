@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,39 +8,77 @@
     <script src="script.js" defer></script>
     <title>Formulário</title>
 </head>
+
 <body>
     <form id="form" method="post">
-        <label for="nome">Nome: </label>
-        <input id="nome" type="text" name="nome" placeholder="Digite o nome..." required>
+        <div class="group">
+            <label for="nome">Nome: </label>
+            <input id="nome" type="text" name="nome" placeholder="Digite o nome..." required>
+        </div>
+       
         <br>
-        <label for="idade">Idade: </label>
-        <input id="idade" type="number" name="idade" placeholder="Digite sua idade...">
+        <div class="group">
+            <label for="idade">Idade: </label>
+            <input id="idade" type="number" name="idade" placeholder="Digite sua idade...">    
+        </div>
         <br>
-        <label for="datanNascimento">Data de nascimento: </label>
-        <input id="dataNascimento" type="date" name="DataNascimento">
+        <div class="group">
+            <label for="datanNascimento">Data de nascimento: </label>
+            <input id="dataNascimento" type="date" name="DataNascimento">    
+        </div>
         <br>
-        <label for="email">E-mail: </label>
-        <input id="email" type="email" name="email" placeholder="Digite o nome...">
+        <div class="group">
+            <label for="email">E-mail: </label>
+            <input id="email" type="email" name="email" placeholder="Digite o nome...">    
+        </div>
         <br>
-        <label for="curso">Escolha seu curso: </label>
-        <select name="curso" id="curso">
+        <div class="group">
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" name="senha">
+        </div>
+        <br>
+        <div class="group">
+            <label for="curso">Escolha seu curso: </label>
+            <select name="curso" id="curso">    
+        
             <option selected disabled>Selecione...</option>
             <option value="info">Informática</option>
             <option value="adm">Administração</option>
             <option value="amb">Meio-Ambiente</option>
             <option value="qui">Química</option>
         </select>
+        </div>
         <br>
-        <label for="turno">Turno do curso: </label>
-        <input id="turno" type="radio" name="turno" value="manhã"> Manhã
-        <input id="turno" type="radio" name="turno" value="tarde"> Tarde
+        <div class="group">
+            <fieldset>
+                <legend for="turno">Turno do curso: </legend>
+                <label>
+                    <input id="turno" type="radio" name="turno" value="manhã"> Manhã
+                </label>
+                <label>
+                    <input id="turno" type="radio" name="turno" value="tarde"> Tarde
+                </label>
+            </fieldset>
+        </div>
         <br>
-        <label for="locomocao">Como você vem para a escola: </label>
-        <input id="locomocao" type="checkbox" name="publico" value="publico"> Público
-        <input id="locomocao" type="checkbox" name="privado" value="privado"> Privado
+        <div class="group">
+            <fieldset>
+                <legend for="locomocao">Como você vem para a escola: </legend>
+                <label>
+                    <input id="locomocao" type="checkbox" name="publico" value="publico"> Público
+                </label>
+                <label>
+                    <input id="locomocao" type="checkbox" name="privado" value="privado"> Privado
+                </label>
+            </fieldset>
+        </div>
         <br>
-        <button id="botao" name="cadastrar">Cadastrar</button>
-        <input id="reset" type="reset" name="button" value="reset">
+        <div class="group">
+            <button id="botao" name="cadastrar">Cadastrar</button>
+            <input id="reset" type="reset" name="button" value="reset">
+        </div>
     </form>
+    <div id="texto"></div>
 </body>
+
 </html>

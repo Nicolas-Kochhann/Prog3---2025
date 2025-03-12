@@ -1,5 +1,60 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    margin-bottom: 10px;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14pt;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.grupo {
+    margin: 5px;
+    padding: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 2px;
+}
+
+input[type="reset"] {
+    border-radius: 5px;
+    background-color: rgb(206, 85, 85);
+    font-size: 20px;
+}
+
+input[type="reset"]:hover {
+    background-color: rgb(230, 69, 69);
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(54, 189, 54);
+}
+
+button:hover {
+    background-color: rgb(108, 211, 108);
+    cursor: pointer;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+#texto{
+    font-size: 100px;
+    padding: 15px;
 }
