@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Revisão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <form id="formID" class="container-form">
+            <div class="container-title">
+                <h1>PREÇO DO PEDIDO</h1>
+            </div>
+            <div>Tamanho do panqueca:</div>
+            <div class="container-input">
+                <label><input type="radio" name="radio" id="radio1" value="P"> P</label>
+                <label><input type="radio" name="radio" id="radio2" value="M"> M</label>
+                <label><input type="radio" name="radio" id="radio3" value="G"> G</label>
+            </div>
+            <div>Sabor panqueca:</div>
+            <div class="container-input">
+                <div>
+                    <label><input type="checkbox" name="checkbox" id="checkbox1"> Calabresa</label>
+                    <label><input type="checkbox" name="checkbox" id="checkbox2"> Queijo</label>
+                    <label><input type="checkbox" name="checkbox" id="checkbox3"> Morango</label>
+                </div>
+            </div>
+            <div>Entrega ou retirada?</div>
+            <div class="container-select">
+                <select name="formaEntrega" id="formaEntrega">
+                    <option value="entrega">Entrega</option>
+                    <option value="retirada">Retirada</option>
+                </select>
+            </div>
+            <div class="container-number">
+                <label for="">Quantidade:</label>
+                <input type="number" name="quantidade" id="quantidade">
+            </div>
+            <div class="container-calcular">
+                <button>Calcular</button>
+                <label for="">Valor total: </label>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
