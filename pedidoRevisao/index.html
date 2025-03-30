@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício Revisão</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
 </head>
 
 <body>
@@ -16,16 +17,16 @@
             </div>
             <div>Tamanho do panqueca:</div>
             <div class="container-input">
-                <label><input type="radio" name="radio" id="radio1" value="P"> P</label>
-                <label><input type="radio" name="radio" id="radio2" value="M"> M</label>
-                <label><input type="radio" name="radio" id="radio3" value="G"> G</label>
+                <label><input type="radio" name="tamanho" id="tamanho1" value="P"> P</label>
+                <label><input type="radio" name="tamanho" id="tamanho2" value="M"> M</label>
+                <label><input type="radio" name="tamanho" id="tamanho3" value="G"> G</label>
             </div>
             <div>Sabor panqueca:</div>
             <div class="container-input">
                 <div>
-                    <label><input type="checkbox" name="checkbox" id="checkbox1"> Calabresa</label>
-                    <label><input type="checkbox" name="checkbox" id="checkbox2"> Queijo</label>
-                    <label><input type="checkbox" name="checkbox" id="checkbox3"> Morango</label>
+                    <label><input type="checkbox" name="calabresa" id="sabor1" value="calabresa"> Calabresa</label>
+                    <label><input type="checkbox" name="queijo" id="sabor2" value="queijo"> Queijo</label>
+                    <label><input type="checkbox" name="morango" id="sabor3" value="morango"> Morango</label>
                 </div>
             </div>
             <div>Entrega ou retirada?</div>
@@ -37,11 +38,11 @@
             </div>
             <div class="container-number">
                 <label for="">Quantidade:</label>
-                <input type="number" name="quantidade" id="quantidade">
+                <input type="number" name="quantidade" id="quantidade" min="1">
             </div>
             <div class="container-calcular">
-                <button>Calcular</button>
-                <label for="">Valor total: </label>
+                <button type="submit">Calcular</button>
+                <label id="calculo">Valor total: </label>
             </div>
         </form>
     </div>
