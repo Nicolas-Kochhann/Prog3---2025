@@ -14,9 +14,10 @@ form.addEventListener("submit", function(event){
     } else if (formData.has("publico")){
         texto.textContent = `${dados['nome']} vem de transporte público`;
     } else if (formData.has("privado")){
-        `${dados['nome']} vem de transporte privado`;
+        texto.textContent = `${dados['nome']} vem de transporte privado`;
     } else {
         texto.textContent = `${dados['nome']} não vem para a escola`;
     }
 })
 
+s
