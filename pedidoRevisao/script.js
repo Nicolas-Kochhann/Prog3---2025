@@ -41,7 +41,7 @@ FORM.addEventListener("submit", function(event){
 
     let valorEntrega = 5;
     if (dados["formaEntrega"] == "entrega"){
-        valorTotal += 5;
+        valorTotal += valorEntrega;
     }
 
     let calculo = document.getElementById("calculo");
